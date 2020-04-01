@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages', # new
     'users', # new
+    'bootstrap_datepicker_plus', # new
+    'bootstrap4', # new
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser' # new
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'textbook_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [(os.path.join(BASE_DIR, 'templates')), ], # new
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -73,6 +75,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'textbook_project.wsgi.application'
 
+BOOTSTRAP4 = { 'include_jquery': True } # new
+
+LOGIN_REDIRECT_URL = 'home' # new
+LOGOUT_REDIRECT_URL = 'home' # new
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

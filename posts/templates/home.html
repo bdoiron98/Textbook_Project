@@ -2,26 +2,11 @@
 
 {% block content %}
   {% for post in object_list %}
-<!--    <div class="card" >
+    <div class="card" >
       <div class="card-body">
         <h5 class="card-title">{{ post.body }}</h5>
         <p class="card-text">{{ post.user }}</p>
       </div>
-    </div> -->
-
-    <div class="row" id="content">
-          <div class="medium-8 columns">
-            <div class="blog-post">
-              <h5 class="card-title">{{ post.body }}</h5><small>
-              <img class="thumbnail" src="https://placehold.it/400x400">
-              <p class="card-text">{{ post.user }}</p>
-              <div class="callout">
-                <ul class="menu simple">
-                <!--  <h5 class="card-title">{{ post.body }}</h5> -->
-                  <li><a href="#">Comments: 3</a></li>
-                </ul>
-              </div>
-            </div>
-
+    </div>
   {% endfor %}
 {% endblock content %}

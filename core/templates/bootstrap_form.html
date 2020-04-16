@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+  <h4>Search/Filter</h4>
+    <form method="GET" action=".">
+<form>
+  <div class="form-group">
+    <label for="title_contains">Title</label>
+    <input type="search" name="title_contains" class="form-control" id="title_contains" placeholder="Title contains...">
+  </div>
+  <div class="form-group">
+    <label for="author_contains">Author</label>
+    <input type="search" name="author_contains"class="form-control" id="author_contains" placeholder="Author name...">
+  </div>
+  <div class="form-group">
+      <label for="major">Major</label>
+      <select class="custom-select mr-sm-2" name="major" id="major">
+        <option selected>Choose...</option>
+        <option value="1">ISDS</option>
+        <option value="2">ACCT</option>
+        <option value="3">ENTR</option>
+      </select>
+    </div>
+  <div class="form-group">
+      <label for="university">University</label>
+        <select class="custom-select mr-sm-2" name="university" id="university">
+          <option selected>Choose...</option>
+          <option value="1">LSU</option>
+          <option value="2">SELU</option>
+          <option value="3">BRCC</option>
+        </select>
+      </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="new">
+            <label class="form-check-label" for="new">
+          Check if textbook is new
+        </label>
+        <div class="form-group row">
+          <button type="search" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+</form>
+
+
+
+
+    </form>
+{% endblock content %}
+
+
+
+
+
+<div class="form-row">
+  <div class="form-group col-18">
+    <div class="input-group">
+      <input class="from-control py-2 border-right-0 border" type="search" placeholder="Title contains..."/>
+      <span class="input-group-append">
+        <div class="input-group-text bg-transparent">
+          <i class="fa fa-search"></i>
+        </div>
+      </span>
+    </div>
+  </div>
+</div>

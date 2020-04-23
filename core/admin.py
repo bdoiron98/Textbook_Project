@@ -1,7 +1,10 @@
 from django.contrib import admin
+# from .models import Textbook
 
-from .models import Author, Major, University
+# admin.site.register(Textbook)
 
-admin.site.register(Author)
-admin.site.register(Major)
-admin.site.register(University)
+# from .models import Author, Major, University
+#
+# admin.site.register(Author)
+# admin.site.register(Major)
+# admin.site.register(University)

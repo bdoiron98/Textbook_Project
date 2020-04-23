@@ -4,8 +4,8 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView
 from django.urls import reverse
-from .models import Post
-from core.models import Textbook
+from .models import Post, Textbook
+# from .models import Textbook
 
 
 class PostListView(ListView):
@@ -15,15 +15,20 @@ class PostListView(ListView):
 class PostCreateView(CreateView):
     model = Post
     template_name = 'post_new.html'
-    fields = ['user', 'body']
+    fields = ['user', 'body', 'title', 'author', 'new']
 
     def get_success_url(self):
         return reverse('home')
 
+class TextListView(ListView):
+    model = Textbook
+    template_name = 'home.html'
 
 class TextCreateView(CreateView):
     model = Textbook
-    template_name = 'post_new.html'
-    fields = ['title', 'author', 'university', 'new']
+    template_name = 'text_new.html'
+    fields = ['title', 'author', 'new']
 
-    
+
+    def get_success_url(self):
+        return reverse('home')

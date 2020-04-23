@@ -11,7 +11,7 @@ class TextListView(ListView):
 class TextCreateView(CreateView):
     model = Textbook
     template_name = 'bootstrap_form.html'
-    fields = ['title', 'author', 'university', 'new']
+    fields = ['title', 'author', 'new']
 
 
 

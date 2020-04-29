@@ -17,6 +17,7 @@ class Post(models.Model):
     # author = models.CharField(max_length=255, default='N/A')
     textbook = models.ForeignKey(Textbook, on_delete=models.PROTECT, blank=True, null=True)
     new = models.BooleanField(default=False)
+    price = models.IntegerField(null=True)
 
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(default=timezone.now)

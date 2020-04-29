@@ -9,4 +9,4 @@ class CustomPostForm(forms.ModelForm):
 
     class Meta:
         model = Post
-        fields = ['new', 'body', 'textbook']
+        fields = ['new', 'body', 'textbook', 'price']

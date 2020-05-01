@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'bootstrap_datepicker_plus', # new
     'bootstrap4',
     'core',
+    'payments',
 
 ]
 

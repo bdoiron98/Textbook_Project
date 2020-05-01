@@ -11,6 +11,7 @@ python-dateutil = "*"
 django-bootstrap-datepicker-plus = "*"
 django-bootstrap4 = "*"
 bootstrap-datepicker-plus = "*"
+stripe = "*"
 
 [requires]
 python_version = "3.7"

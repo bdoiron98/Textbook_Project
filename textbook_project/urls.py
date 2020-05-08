@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('posts.urls')), #new
     path('', include('core.urls')),
     path('payments/', include('payments.urls')), # new
+    path('', include('cart.urls')), # new
 ]
 
 

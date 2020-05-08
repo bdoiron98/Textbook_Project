@@ -1,1 +1,1 @@
-web: gunicorn django_pages.wsgi
+web: gunicorn Textbook_project.wsgi

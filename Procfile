@@ -1,1 +1,1 @@
-web: gunicorn Textbook_project.wsgi
+web: gunicorn textbook_project.wsgi

@@ -8,10 +8,10 @@ verify_ssl = true
 [packages]
 django = "*"
 python-dateutil = "*"
-django-bootstrap-datepicker-plus = "*"
 django-bootstrap4 = "*"
-bootstrap-datepicker-plus = "*"
 stripe = "*"
+django-bootstrap-datepicker-plus = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"

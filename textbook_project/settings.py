@@ -25,7 +25,7 @@ SECRET_KEY = 'ztde00g3y#m24@z%#_ugwkun-1gp6fjwdp_9nxqw7_q4chgvxn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'bootstrap4',
     'core',
     'payments',
+    'cart',
+    'crispy_forms',
 
 ]
 
